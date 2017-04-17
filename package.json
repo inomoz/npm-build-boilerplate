@@ -18,7 +18,6 @@
     "compress"
   ],
   "scripts": {
-    "init-boilerplate": "./.init.sh",
     "clean": "rimraf dist/{css/*,js/*,images/*}",
     "autoprefixer": "postcss -u autoprefixer -r dist/css/*",
     "scss": "node-sass --output-style compressed -o dist/css src/scss",
