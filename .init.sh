@@ -3,4 +3,10 @@
 cd "$(dirname "$0")"
 
 svn export https://github.com/h5bp/html5-boilerplate/trunk/dist src
-rm src/.editorconfig src/.gitattributes src/.gitignore src/.htaccess
+cd src
+rm .editorconfig .gitattributes .gitignore .htaccess
+rm -r css
+rm -r js/vendor
+mkdir sass
+mkdir img/icons
+touch sass/main.sass
