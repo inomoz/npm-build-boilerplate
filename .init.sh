@@ -10,7 +10,6 @@ function init_boilerplate {
   rm -r js/vendor
   mkdir sass
   mkdir img/icons
-  touch sass/main.sass
 }
 
 if [ -d "src" ]; then
@@ -30,4 +29,5 @@ echo    # (optional) move to a new line
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
     npm install bulma --save
+    echo "@import ../../node_modules/bulma/bulma.sass" >> $(dirname "$0")/sass/main.sass
 fi
